@@ -9,40 +9,24 @@
     </parent>
     <artifactId>consumer</artifactId>
 
-    <properties>
-        <nacos.version>1.0.1</nacos.version>
-    </properties>
 
     <dependencies>
-        <!-- Spring Boot dependencies -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>${revision}</version>
-        </dependency>
 
-        <!-- Dubbo Registry Nacos -->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-registry-nacos</artifactId>
-            <version>${revision}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.nacos</groupId>
-            <artifactId>nacos-client</artifactId>
-            <version>${nacos.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>com.neo</groupId>
-            <artifactId>dubbo-spring-boot-sample-api</artifactId>
+            <artifactId>sample-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- 熔断机制 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
     </dependencies>
+
+
+
 </project>
